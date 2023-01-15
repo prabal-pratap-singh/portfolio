@@ -1808,4 +1808,5 @@ left: 90.5%
   position: absolute;
   stroke: #21d4fd;
   fill: #21d4fd;
+  display: none;
 }
