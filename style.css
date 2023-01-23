@@ -1800,13 +1800,125 @@ left: 90.5%
 
 #insta_logo{
   opacity: 0.8;
-  width: 40%;
-  height: 20%;
+  width: 3%;
+  height: 3%;
   left: 8%;
+  top: 93%;
+  position: absolute;
+  stroke: #938e93;
+  fill: #938e93;
+}
+
+#insta_logo:hover{
+  animation: popup 0.7s;
+  width: 3.5%;
+  height: 3.5%;
+  stroke: rgb(144, 4, 144);
+  fill: rgb(144, 4, 144);
+}
+
+#github_logo{
+  opacity: 0.8;
+  width: 3%;
+  height: 3%;
+  left: 12%;
   /* top: 133%; */
   top: 93%;
   position: absolute;
-  stroke: #21d4fd;
-  fill: #21d4fd;
-  display: none;
+  stroke: #938e93;
+  fill: #938e93;
 }
+
+#github_logo:hover{
+  animation: popup 0.7s;
+  width: 3.5%;
+  height: 3.5%;
+  stroke: rgb(144, 4, 144);
+  fill: rgb(144, 4, 144);
+}
+
+#linkdin_logo{
+  opacity: 0.8;
+  width: 3%;
+  height: 3%;
+  left: 16%;
+  top: 93%;
+  position: absolute;
+  stroke: #938e93;
+  fill: #938e93;
+}
+
+#linkdin_logo:hover{
+  animation: popup 0.7s;
+  width: 3.5%;
+  height: 3.5%;
+  stroke: rgb(144, 4, 144);
+  fill: rgb(144, 4, 144);
+}
+
+@keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.4);
+  }
+  60%{
+    transform: scale(1.1);
+  }
+  70%{
+    transform: scale(1.2);
+  }
+  80%{
+    transform: scale(1);
+  }
+  90%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+#card {
+  /* position: relative; */
+  position: absolute;
+  z-index: 99999;
+  left: 72%;
+  top: 115vh;
+  width: 180px;
+  height: 230px;
+  background: url('images/download.jpeg') center no-repeat;
+  background-size:cover; 
+  border-radius: 10px;
+  /* transform:
+    rotate(0deg)
+    skew(-10deg, -5deg);  */
+  /* transition:translate 0.25s, box-shadow 0.255; */
+  /* box-shadow:5px 3px rgb(217 220 242 / 15%), 7px 5px rgb(44 217 255/10%), 9px 7px rgb(126 255 178 / 15% ); */
+}
+
+#card:hover {
+  /* translate: 0-30px; */
+    box-shadow:5px 4px rgba(86, 4, 75, 0.75), 10px 7px rgba(119, 16, 140, 0.5), 15px 10px rgba(161, 91, 169, 0.25);
+}
+
+#card_layer{
+  position: absolute;
+  z-index: 99999;
+  left: 72%;
+  top: 115vh;
+  width: 180px;
+  height: 230px;
+  background-color: rgb(88, 4, 88);;
+  background-size:cover; 
+  border-radius: 10px;
+  opacity: .5;
+}
+
+#card_layer:hover{
+  opacity: 0;
+}
+
+  
+
