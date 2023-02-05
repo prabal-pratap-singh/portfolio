@@ -1,3 +1,7 @@
+body::-webkit-scrollbar {
+  display: none;            /* to hide scroll bar */
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -981,17 +985,18 @@
     animation-name: animate10;
     animation-duration: 18s;
     animation-iteration-count: infinite; }
-.floating_animation:nth-child(n + 55) {
-    opacity: 0.4;
-    left: 26vw;
-    top: 21vh;
-    font-size: 40px;
-    -webkit-animation-name: animate1;
-    -webkit-animation-duration: 1.8s;
-    animation-name: animate1;
-    animation-duration: 1.8s;
-    animation-iteration-count: infinite; }
-    
+
+    .floating_animation:nth-child(n + 55) {
+      opacity: 0.4;
+      left: 26vw;
+      top: 21vh;
+      font-size: 40px;
+      -webkit-animation-name: animate1;
+      -webkit-animation-duration: 1.8s;
+      animation-name: animate1;
+      animation-duration: 1.8s;
+      animation-iteration-count: infinite; }
+
     .floating_animation:nth-child(n + 56) {
     opacity: 0.4;
     left: 58vw;
@@ -1920,5 +1925,62 @@ left: 90.5%
   opacity: 0;
 }
 
-  
+.worked_content{
+  background: #141414;
+}
 
+#worked_heading{
+  padding-top: 12%;
+  display: flex;
+  align-items: left;
+  padding-left: 8.5%;
+  position: relative;
+  font-size: 2.5rem;
+  background: linear-gradient(
+            to left, #b721ff 75%, #21d4fd 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.worked_content li{
+  border-style: solid;
+  margin-top: 4%;
+  list-style: none;
+  position: relative;
+  color: #b721ff;
+  transition: .1s; 
+  left: 15%;
+  font-size: 1.6rem;
+  border-color: #b721ff;
+}
+
+#worked_on_krishify_button{
+  color: #b721ff;
+  font-size: 1.4rem;
+  background-color: #141414;
+  border: none;
+  margin-left: 20%;
+  margin-right: 13%
+}
+
+#worked_on_krishify_button:hover{
+  border: solid;
+  border-color: #b721ff;
+  transition: .3s; 
+  padding: 1%;
+}
+
+.workdone_in_krishify{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5%;
+  /* justify-content: space-between; */
+}
+  
+.workdone_in_krishify h3{
+  color: #938e93;
+  font-size: 1.6rem;
+}
