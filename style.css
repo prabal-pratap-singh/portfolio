@@ -1931,7 +1931,6 @@ left: 90.5%
 
 #worked_heading{
   padding-top: 12%;
-  display: flex;
   align-items: left;
   padding-left: 8.5%;
   position: relative;
@@ -1963,7 +1962,7 @@ left: 90.5%
   background-color: #141414;
   border: none;
   margin-left: 20%;
-  margin-right: 13%
+  margin-right: 8%
 }
 
 #worked_on_krishify_button:hover{
@@ -1973,14 +1972,27 @@ left: 90.5%
   padding: 1%;
 }
 
-.workdone_in_krishify{
+.workdone_companies{
   display: flex;
-  flex-direction: row;
-  margin-top: 2.5%;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 2.8%;
   /* justify-content: space-between; */
 }
-  
-.workdone_in_krishify h3{
+
+.company_link{
+  text-decoration: none;
+  color: #f77062;
+}
+
+.company_link:hover{
+  color: #b721ff
+}
+
+.workdone_companies_info{
+  position: relative;
+  left: 30%;
   color: #938e93;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  top: -100%;
 }
