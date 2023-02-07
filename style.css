@@ -1773,6 +1773,7 @@ left: 90.5%
   border: #ffb19f;
   outline: invert;
   border-radius: 8px;
+  margin-top: 0.6%;
   background: #f77062;
   color: #fff;
 }
@@ -1888,7 +1889,6 @@ left: 90.5%
 #card {
   /* position: relative; */
   position: absolute;
-  z-index: 99999;
   left: 72%;
   top: 115vh;
   width: 180px;
@@ -1910,7 +1910,7 @@ left: 90.5%
 
 #card_layer{
   position: absolute;
-  z-index: 99999;
+  z-index: 1;
   left: 72%;
   top: 115vh;
   width: 180px;
@@ -1944,7 +1944,7 @@ left: 90.5%
   -moz-text-fill-color: transparent;
 }
 
-.worked_content li{
+/* .worked_content li{
   border-style: solid;
   margin-top: 4%;
   list-style: none;
@@ -1954,7 +1954,7 @@ left: 90.5%
   left: 15%;
   font-size: 1.6rem;
   border-color: #b721ff;
-}
+} */
 
 #worked_on_krishify_button{
   color: #b721ff;
@@ -1966,18 +1966,19 @@ left: 90.5%
 }
 
 #worked_on_krishify_button:hover{
-  border: solid;
+  border: none;
   border-color: #b721ff;
   transition: .3s; 
-  padding: 1%;
+  padding: 10%;
 }
 
 .workdone_companies{
-  display: flex;
+  background: #141414;
+  display: grid;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 16%;
   margin-top: 2.8%;
-  /* justify-content: space-between; */
 }
 
 .company_link{
@@ -1990,9 +1991,25 @@ left: 90.5%
 }
 
 .workdone_companies_info{
-  position: relative;
-  left: 30%;
-  color: #938e93;
+  background: #141414;
+  /* position: relative; */
+  margin-left: 30%;
+  margin-top: -3.5vh;
+  color: #FFFFFF;
   font-size: 1.4rem;
-  top: -100%;
+}
+
+.company_time_spent{
+  font-size: 1.2rem;
+  color: #938e93;
+}
+
+.workdone_in_company{
+  margin-top: 1%;
+  color: #938e93;
+  font-size: 2.2vh;
+}
+
+.workdone_in_company li{
+  width: 75%;
 }
