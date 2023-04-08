@@ -2012,4 +2012,7 @@ left: 90.5%
 
 .workdone_in_company li{
   width: 75%;
+  margin: 1em 0;
+  /* list-style-image: url('images/purple-square.gif'); */
+  list-style-position: outside;
 }
