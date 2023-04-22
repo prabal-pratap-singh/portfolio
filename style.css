@@ -2,13 +2,21 @@ body::-webkit-scrollbar {
   display: none;            /* to hide scroll bar */
 }
 
+:root {
+  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  --fz-xs: 16px;
+  --fz-sm: 17px;
+  --bright_blue: #21d4fd;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
-    /* border:solid;
-    border-color:#f77062 */
+    border:solid;
+    border-color:#f77062;
+    -webkit-font-smoothing: antialiased;
 }
 
 .navbar{
@@ -1733,17 +1741,13 @@ left: 90.5%
   font-family: 'Open Sans', sans-serif;;
   position: relative;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1.5vw;
   color: #938e93;
   padding-top: 4%;
-  padding-right: 40%;
+  padding-right: 10%;
   padding-left: 8.5%;
-  /* opacity: 0.4;
-  -webkit-animation-name: animate20;
-  -webkit-animation-duration: 3.6s;
-  animation-name: animate20;
-  animation-duration: 1s;
-  animation-iteration-count: 1; */
+  max-width: 70%;
+  /* max-height: 80%; */
 }
 #about_me_para2{
   line-height: 1.5;
@@ -1886,43 +1890,38 @@ left: 90.5%
   }
 }
 
+.card_cointainer{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 #card {
-  /* position: relative; */
-  position: absolute;
-  left: 72%;
-  top: 115vh;
-  width: 180px;
-  height: 230px;
+  grid-row: 1;
+  grid-column: 1;
+  width: 14vw;
+  height: 15vw;
   background: url('images/download.jpeg') center no-repeat;
   background-size:cover; 
   border-radius: 10px;
-  /* transform:
-    rotate(0deg)
-    skew(-10deg, -5deg);  */
-  /* transition:translate 0.25s, box-shadow 0.255; */
-  /* box-shadow:5px 3px rgb(217 220 242 / 15%), 7px 5px rgb(44 217 255/10%), 9px 7px rgb(126 255 178 / 15% ); */
+  opacity: .4;
 }
 
-#card:hover {
-  /* translate: 0-30px; */
-    box-shadow:5px 4px rgba(86, 4, 75, 0.75), 10px 7px rgba(119, 16, 140, 0.5), 15px 10px rgba(161, 91, 169, 0.25);
-}
 
 #card_layer{
-  position: absolute;
+  grid-row: 1;
+  grid-column: 1;
+  width: 14vw;
+  height: 15vw;
   z-index: 1;
-  left: 72%;
-  top: 115vh;
-  width: 180px;
-  height: 230px;
-  background-color: rgb(88, 4, 88);;
+  background: url('images/download.jpeg') center no-repeat;
   background-size:cover; 
   border-radius: 10px;
-  opacity: .5;
+  opacity: .4;
 }
 
 #card_layer:hover{
-  opacity: 0;
+  opacity: 1;
 }
 
 .worked_content{
@@ -1958,7 +1957,7 @@ left: 90.5%
 
 #worked_on_krishify_button{
   color: #b721ff;
-  font-size: 1.4rem;
+  font-size: 1.7vw;
   background-color: #141414;
   border: none;
   margin-left: 20%;
@@ -1975,10 +1974,10 @@ left: 90.5%
 .workdone_companies{
   background: #141414;
   display: grid;
-  flex-direction: column;
   justify-content: flex-start;
   margin-left: 16%;
   margin-top: 2.8%;
+  margin-right: 72%;
 }
 
 .company_link{
@@ -2015,4 +2014,40 @@ left: 90.5%
   margin: 1em 0;
   /* list-style-image: url('images/purple-square.gif'); */
   list-style-position: outside;
+}
+
+.about_me_para{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill_sets{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 270px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+::before, ::after {
+  box-sizing: inherit;
+}
+
+.skill_sets li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+
+.skill_sets li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--bright_blue);
+  font-size: var(--fz-sm);
+  line-height: 22px;
 }
