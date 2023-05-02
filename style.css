@@ -1919,6 +1919,7 @@ left: 90.5%
 
 .worked_content{
   background-color: #141414;
+  margin-left: 1%;
 }
 
 #worked_heading{
@@ -2262,13 +2263,14 @@ left: 90.5%
     transform: translate(-50%, -50%);
     transition: opacity 0.3s ease-in-out,
                 transform 0.3s ease-in-out;
+    /* z-index: 11; */
 }
 
 .cursor-dot {
     width:  8px;
     height:  8px;
     background-color: var(--cursor_color);
-    z-index: 5;
+    z-index: 11;
 }
 
 .cursor-dot-outline {
@@ -2278,7 +2280,7 @@ left: 90.5%
   border-color: rgba(202, 125, 125, 0.5);
   background-color: rgba(20, 20, 20, 0.5);
   opacity: 0.5;
-  z-index: 1;
+  z-index: 11;
 }
 
 .contact h1{
@@ -2340,6 +2342,104 @@ textarea:focus{
   outline: none;
 }
 
+
 input:focus{
   outline: none;
+}
+
+.left{
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 3%;
+  right: auto;
+  z-index: 10;
+}
+
+.right{
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 94%;
+  right: auto;
+  z-index: 10;
+}
+
+.right::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 110px;
+  margin: 0px auto;
+  background-color:  #938e93;
+}
+
+.left_side_social_links{
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.left_side_social_links li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.left_side_logo_design{
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  stroke: #938e93;
+  fill: #938e93;
+  width: 22px;
+  margin-bottom: 100%;
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+.left::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 110px;
+  margin: 0px auto;
+  background-color:  #938e93;
+}
+
+
+/* #left_side_social_links_insta_logo{
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+  width: 65px;
+}
+
+#left_side_social_links_github_logo{
+  width: 65px;
+  height: 5%;
+}
+
+#left_side_social_links_linkdin_logo{
+  width: 65px;
+  height: 5%;
+} */
+
+.right  a {
+  margin: 20px auto;
+  padding: 10px;
+  /* font-family: var(--font-mono); */
+  /* font-size: var(--fz-xxs); */
+  line-height: var(--fz-lg);
+  letter-spacing: 0.1em;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  color: #938e93;;
 }

@@ -102,22 +102,40 @@ $(window).on("load",function() {
   }).scroll(); //invoke scroll-handler on page-load
 });
 
-$(window).on("load",function() {
+// $(window).on("load",function() {
+//   $(window).scroll(function() {
+//     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+//     $(".about_me_para").each(function() {
+//       /* Check the location of each desired element */
+//       var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+//       /* If the element is completely within bounds of the window, fade it in */
+//       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+//         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+//       } else { //object goes out of view (scrolling up)
+//         if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+//       }
+//     });
+//   }).scroll(); //invoke scroll-handler on page-load
+// });
+
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".about_me_para").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      if (windowBottom < 1250) { //object comes into view (scrolling down)
+        if ($("#left").css("opacity")==1) {$("#left").fadeTo(250,0);}
       } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+        if ($("#left").css("opacity")==0) {$("#left").fadeTo(500,1);}
       }
-    });
   }).scroll(); //invoke scroll-handler on page-load
-});
+
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      if (windowBottom < 1250) { //object comes into view (scrolling down)
+        if ($("#right").css("opacity")==1) {$("#right").fadeTo(250,0);}
+      } else { //object goes out of view (scrolling up)
+        if ($("#right").css("opacity")==0) {$("#right").fadeTo(500,1);}
+      }
+  }).scroll(); //invoke scroll-handler on page-load
 
 
 
@@ -254,18 +272,7 @@ cursor.init();
 
 // customize cursor ---------------------------------------------------------------------
 
-function loadEvents() {
-  var mailString;
-  function updateMailString() {
-      mailString = '?subject=' + encodeURIComponent($('#subject').val())
-          + '&body=' + encodeURIComponent($('#message').val());
-      $('#mail-link').attr('href',  'mailto:pratapsinghprabal516@gmail.com' + mailString);
-  }
-  $( "#subject" ).focusout(function() { updateMailString(); });
-  $( "#message" ).focusout(function() { updateMailString(); });
-  updateMailString();
-  console.log(mailString)
-}
+
 
 
 
