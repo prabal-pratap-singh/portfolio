@@ -818,6 +818,7 @@ input:focus{
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  margin-bottom: 10%;
 }
 
 .personal_project_1 {
@@ -1002,7 +1003,7 @@ input:focus{
 .contact p {
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: 13vw;
   margin-right: 13vw;
   color: #938e93;
