@@ -172,18 +172,20 @@ $(window).on("load",function() {
 
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-      if (windowBottom < 1250) { //object comes into view (scrolling down)
+    let screen_width = $(this).innerWidth();
+      if (windowBottom < 1250 && screen_width > 760) { //object comes into view (scrolling down)
         if ($("#left").css("opacity")==1) {$("#left").fadeTo(250,0);}
-      } else { //object goes out of view (scrolling up)
+      } else if(screen_width > 760) { //object goes out of view (scrolling up)
         if ($("#left").css("opacity")==0) {$("#left").fadeTo(500,1);}
       }
   }).scroll(); //invoke scroll-handler on page-load
 
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-      if (windowBottom < 1250) { //object comes into view (scrolling down)
+    let screen_width = $(this).innerWidth();
+      if (windowBottom < 1250 && screen_width>760) { //object comes into view (scrolling down)
         if ($("#right").css("opacity")==1) {$("#right").fadeTo(250,0);}
-      } else { //object goes out of view (scrolling up)
+      } else if(screen_width > 760) { //object goes out of view (scrolling up)
         if ($("#right").css("opacity")==0) {$("#right").fadeTo(500,1);}
       }
   }).scroll(); //invoke scroll-handler on page-load
@@ -324,7 +326,15 @@ cursor.init();
 // customize cursor ---------------------------------------------------------------------
 
 
-
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    let screen_width = window.innerWidth;
+    if(screen_width<760){
+      $("#right").hide();
+      $("#left").hide();
+    }
+  }).scroll();
+});
 
 
 

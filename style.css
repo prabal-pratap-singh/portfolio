@@ -508,6 +508,7 @@ body::-webkit-scrollbar {
   width: 100%;
   left: 8.5%;
   margin-left: 8.3%;
+  max-width: 1082px;
 }
 
 
