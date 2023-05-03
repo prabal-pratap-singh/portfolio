@@ -317,6 +317,8 @@ body::-webkit-scrollbar {
   text-align: left;
   color: white;
   margin-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 2%;
 }
 
 .personal_project_content{
