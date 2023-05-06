@@ -107,6 +107,7 @@ body::-webkit-scrollbar {
   border-radius: 10px;
   background: #f77062;
   color: #fff;
+  font-size: 1rem;
 }
 
 .button:hover {
@@ -661,19 +662,23 @@ input:focus {
   padding-right: 20%;
 }
 
-#email_id_div {
+#email_id_div p a {
   position: absolute;
   right: 7.5%;
   top: 91%;
   color: #938e93;
 }
 
-#email_id_div p:hover {
+#email_id_div p a:hover {
   animation: popup 0.7s;
   position: absolute;
   font-size: 1em;
   right: 7.5%;
   top: 91%;
+  color: rgb(144, 4, 144);
+}
+
+#email_id_div p a:visited {
   color: rgb(144, 4, 144);
 }
 
@@ -1287,6 +1292,12 @@ input:focus {
   #email_id_div{
     display: none;
   }
+
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+    width: 35%;
+}
 }
 
 /*  hero section  */
