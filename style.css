@@ -76,13 +76,14 @@ body::-webkit-scrollbar {
 }
 
 .navbar__links {
-  color: #fff;
+  color: #938e93;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  font-size: 1rem;
 }
 
 .navbar__btn {
@@ -660,12 +661,28 @@ input:focus {
   padding-right: 20%;
 }
 
+#email_id_div {
+  position: absolute;
+  right: 7.5%;
+  top: 91%;
+  color: #938e93;
+}
+
+#email_id_div p:hover {
+  animation: popup 0.7s;
+  position: absolute;
+  font-size: 1em;
+  right: 7.5%;
+  top: 91%;
+  color: rgb(144, 4, 144);
+}
+
 #insta_logo {
   opacity: 0.8;
   width: 3%;
   height: 3%;
   left: 8%;
-  top: 93%;
+  top: 90%;
   position: absolute;
   stroke: #938e93;
   fill: #938e93;
@@ -685,7 +702,7 @@ input:focus {
   height: 3%;
   left: 12%;
   /* top: 133%; */
-  top: 93%;
+  top: 90%;
   position: absolute;
   stroke: #938e93;
   fill: #938e93;
@@ -704,7 +721,7 @@ input:focus {
   width: 3%;
   height: 3%;
   left: 16%;
-  top: 93%;
+  top: 90%;
   position: absolute;
   stroke: #938e93;
   fill: #938e93;
@@ -1208,6 +1225,14 @@ input:focus {
     display: none;
   }
 
+  #email_id {
+    width: 6%;
+    height: 6%;
+    left: 33%;
+    top: 91%;
+    color: #938e93;;
+  }
+
   #insta_logo {
     width: 6%;
     height: 6%;
@@ -1257,6 +1282,10 @@ input:focus {
     height: 6.5%;
     stroke: rgb(144, 4, 144);
     fill: rgb(144, 4, 144);
+  }
+
+  #email_id_div{
+    display: none;
   }
 }
 
@@ -1310,6 +1339,7 @@ input:focus {
   transition: all 0.35s;
   outline: none;
   border-radius: 4px;
+  width: 22%;
 }
 
 .main__btn a {
@@ -1424,6 +1454,7 @@ input:focus {
   .main__btn {
     padding: 12px 36px;
     margin: 2.5rem 0;
+    width: 35%;
   }
   #main_img {
     width: 40%;
