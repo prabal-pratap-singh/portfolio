@@ -910,7 +910,7 @@ input:focus {
 
   #worked_heading {
     align-items: left;
-    padding-left: 8.5%;
+    padding-left: 6%;
     position: relative;
     font-size: 2rem;
     background: linear-gradient(to left, #b721ff 75%, #21d4fd 100%);
@@ -971,7 +971,7 @@ input:focus {
   .personal_projects h1 {
     padding-top: 12%;
     background-color: #141414;
-    padding-left: 8.5%;
+    padding-left: 5%;
     position: relative;
     font-size: 1.8rem;
     background: linear-gradient(to left, #b721ff 75%, #21d4fd 100%);
@@ -1379,6 +1379,7 @@ input:focus {
   .main__content {
     text-align: center;
     margin-bottom: 4rem;
+    margin-top: -25%;
   }
 
   .main__content h1 {
@@ -1441,6 +1442,7 @@ input:focus {
   }
   .vertical1 {
     left: 95%;
+    height: 52.1vh;
   }
 
   .vertical2 {
