@@ -580,6 +580,99 @@ input:focus{
   z-index: 10;
 }
 
+.animated_square_panel_1 {
+  display: flex;
+  height: 42px;
+  position:absolute;
+  border-left: 30px solid rgb(176, 156, 176);
+  top: 21%;
+  left: 90.5%
+}
+.animated_square_panel_2{
+  display: flex;
+height: 42px;
+position:absolute;
+border-left: 30px solid rgb(178, 142, 178);
+top: 28%;
+left: 90.5%
+}
+.animated_square_panel_3{
+  display: flex;
+height: 42px;
+position:absolute;
+border-left: 30px solid rgb(183, 112, 183);
+top: 35%;
+left: 90.5%
+}
+.animated_square_panel_4{
+  display: flex;
+height: 42px;
+position:absolute;
+border-left: 30px solid rgb(176, 93, 176);
+top: 42%;
+left: 90.5%
+}
+.animated_square_panel_5 {
+  display: flex;
+height: 42px;
+position:absolute;
+border-left: 30px solid rgb(175, 81, 175);
+top: 49%;
+left: 90.5%
+}
+.animated_square_panel_6{
+  display: flex;
+height: 42px;
+position:absolute;
+border-left: 30px solid rgb(181, 69, 181);
+top: 56%;
+left: 90.5%
+}
+.animated_square_panel_7{
+  display: flex;
+height: 42px;
+position:absolute;
+border-left: 30px solid rgb(179, 38, 179);
+top: 63%;
+left: 90.5%
+}
+.animated_square_panel_8{
+  display: flex;
+height: 42px;
+position:absolute;
+border-left: 30px solid rgb(183, 21, 183);
+top: 70%;
+left: 90.5%
+}
+.animated_square_panel_9{
+  display: flex;
+height: 42px;
+position:absolute;
+border-left: 30px solid rgb(144, 4, 144);
+top: 77%;
+left: 90.5%
+}
+
+.vertical1 {
+  display: flex;
+  border-left: 2px solid rgb(197, 12, 197);
+  height: 61.1vh;
+  position: absolute;
+  left: 89%;
+  top: 21%;
+}
+.vertical2 {
+  display: flex;
+  border-left: 2px solid rgb(197, 12, 197);
+  height: 11vh;
+  position:absolute;
+  left: 8.5%;
+  top: 21%;
+}
+
+.workdone_companies_names{
+  padding-right: 20%;
+}
 
 @media screen and (max-width: 760px){
     .navbar__container{
@@ -849,6 +942,7 @@ input:focus{
   grid-row: 1;
   align-items: right;
   color: white;
+  padding-bottom: 5%;
 }
 
 #personal_project_1_heading {
@@ -884,7 +978,6 @@ input:focus{
   display: flex;
   align-self: flex-start;
   justify-content: flex-start;
-  padding-top: 3%;
   color: #938e93;
 }
 
@@ -941,8 +1034,7 @@ input:focus{
   text-align: right;
   display: flex;
   align-self: flex-start;
-  justify-content: flex-end;
-  padding-top: 3%;
+  justify-content:  flex-start;
   color: #938e93;
 }
 
@@ -999,7 +1091,6 @@ input:focus{
   display: flex;
   align-self: flex-start;
   justify-content: flex-start;
-  padding-top: 3%;
   color: #938e93;
 }
 
@@ -1023,6 +1114,35 @@ input:focus{
   margin-right: 10vw;
   margin-top: 26px;
 }
+
+.animated_square_panel_1{
+  display: none;
+}
+.animated_square_panel_2{
+  display: none;
+}
+.animated_square_panel_3{
+  display: none;
+}
+.animated_square_panel_4{
+  display: none;
+}
+.animated_square_panel_5{
+  display: none;
+}
+.animated_square_panel_6{
+  display: none;
+}
+.animated_square_panel_7{
+  display: none;
+}
+.animated_square_panel_8{
+  display: none;
+}
+.animated_square_panel_9{
+  display: none;
+}
+
 
 
 
@@ -1191,6 +1311,8 @@ input:focus{
     .main__content p{
         font-size: 2rem;
         margin-top: 1.5rem;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     .main__btn{
@@ -1211,6 +1333,13 @@ input:focus{
     .contant p{
         font-size: 1rem;
         margin-top: 3rem;
+    }
+    .vertical1{
+      left: 95%;
+    }
+
+    .vertical2{
+      left: 5%;
     }
 }
 #elements li {
@@ -2432,94 +2561,7 @@ input:focus{
       opacity: 0.3; }
     100% {
       color: #84991C; } }
-.vertical1 {
-  display: flex;
-  border-left: 2px solid rgb(197, 12, 197);
-  height: 61.1vh;
-  position: absolute;
-  left: 89%;
-  top: 21%;
-}
-.vertical2 {
-  display: flex;
-  border-left: 2px solid rgb(197, 12, 197);
-  height: 11vh;
-  position:absolute;
-  left: 8.5%;
-  top: 21%;
-}
-.animated_square_panel_1 {
-  display: flex;
-  height: 42px;
-  position:absolute;
-  border-left: 30px solid rgb(176, 156, 176);
-  top: 21%;
-  left: 90.5%
-}
-.animated_square_panel_2{
-  display: flex;
-height: 42px;
-position:absolute;
-border-left: 30px solid rgb(178, 142, 178);
-top: 28%;
-left: 90.5%
-}
-.animated_square_panel_3{
-  display: flex;
-height: 42px;
-position:absolute;
-border-left: 30px solid rgb(183, 112, 183);
-top: 35%;
-left: 90.5%
-}
-.animated_square_panel_4{
-  display: flex;
-height: 42px;
-position:absolute;
-border-left: 30px solid rgb(176, 93, 176);
-top: 42%;
-left: 90.5%
-}
-.animated_square_panel_5 {
-  display: flex;
-height: 42px;
-position:absolute;
-border-left: 30px solid rgb(175, 81, 175);
-top: 49%;
-left: 90.5%
-}
-.animated_square_panel_6{
-  display: flex;
-height: 42px;
-position:absolute;
-border-left: 30px solid rgb(181, 69, 181);
-top: 56%;
-left: 90.5%
-}
-.animated_square_panel_7{
-  display: flex;
-height: 42px;
-position:absolute;
-border-left: 30px solid rgb(179, 38, 179);
-top: 63%;
-left: 90.5%
-}
-.animated_square_panel_8{
-  display: flex;
-height: 42px;
-position:absolute;
-border-left: 30px solid rgb(183, 21, 183);
-top: 70%;
-left: 90.5%
-}
-.animated_square_panel_9{
-  display: flex;
-height: 42px;
-position:absolute;
-border-left: 30px solid rgb(144, 4, 144);
-top: 77%;
-left: 90.5%
-}
+
 
 /* .contant{
   position: relative;

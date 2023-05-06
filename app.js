@@ -305,7 +305,7 @@ $(window).on("load",function() {
 //     });
 //   }).scroll(); //invoke scroll-handler on page-load
 // });
-
+$(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     let screen_width = $(this).innerWidth();
@@ -315,7 +315,9 @@ $(window).on("load",function() {
         if ($("#left").css("opacity")==0) {$("#left").fadeTo(500,1);}
       }
   }).scroll(); //invoke scroll-handler on page-load
+});
 
+$(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     let screen_width = $(this).innerWidth();
@@ -325,7 +327,7 @@ $(window).on("load",function() {
         if ($("#right").css("opacity")==0) {$("#right").fadeTo(500,1);}
       }
   }).scroll(); //invoke scroll-handler on page-load
-
+});
 
 
 // customize cursor ---------------------------------------------------------------------
