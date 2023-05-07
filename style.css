@@ -1519,6 +1519,10 @@ input:focus {
   .vertical2 {
     left: 5%;
   }
+
+  .contact{
+    margin-bottom: 25%;
+  }
 }
 #elements li {
   list-style: none;
