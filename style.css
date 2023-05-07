@@ -152,7 +152,7 @@ body::-webkit-scrollbar {
   width: 14vw;
   height: 15vw;
   z-index: 1;
-  background: url("images/download.jpeg") center no-repeat;
+  background: url("images/profile_photo.png") center no-repeat;
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
@@ -167,7 +167,7 @@ body::-webkit-scrollbar {
   grid-column: 1;
   width: 14vw;
   height: 15vw;
-  background: url("images/download.jpeg") center no-repeat;
+  background: url("images/profile_photo.png") center no-repeat;
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
@@ -297,10 +297,14 @@ body::-webkit-scrollbar {
   width: 39vw;
   height: 39vh;
   grid-column: 1;
-  background: url("images/download.jpeg") center no-repeat;
+  background: url("images/personal_project_1.png") center no-repeat;
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
+}
+
+.personal_project_1_image:hover{
+  opacity: 0.8;
 }
 
 .personal_project_1_details {
@@ -310,7 +314,7 @@ body::-webkit-scrollbar {
 }
 
 #personal_project_1_heading {
-  text-align: left;
+  text-align: right;
   color: white;
   margin-bottom: 8%;
   padding-left: 5%;
@@ -365,10 +369,14 @@ body::-webkit-scrollbar {
   width: 39vw;
   height: 39vh;
   grid-column: 2;
-  background: url("images/download.jpeg") center no-repeat;
+  background: url("images/personal_project_2.png") center no-repeat;
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
+}
+
+.personal_project_2_image:hover{
+  opacity: 0.8;
 }
 
 .personal_project_2_details {
@@ -423,10 +431,14 @@ body::-webkit-scrollbar {
   width: 39vw;
   height: 39vh;
   grid-column: 1;
-  background: url("images/download.jpeg") center no-repeat;
+  background: url("images/personal_project_3.png") center no-repeat;
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
+}
+
+.personal_project_3_image:hover{
+  opacity: 0.8;
 }
 
 .personal_project_3_details {
@@ -484,7 +496,7 @@ body::-webkit-scrollbar {
   width: 8px;
   height: 8px;
   background-color: var(--cursor_color);
-  z-index: 11;
+  z-index: 9999999;
 }
 
 .cursor-dot-outline {
@@ -494,7 +506,7 @@ body::-webkit-scrollbar {
   border-color: rgba(202, 125, 125, 0.5);
   background-color: rgba(20, 20, 20, 0.5);
   opacity: 0.5;
-  z-index: 11;
+  z-index: 9999999;
 }
 
 .contact h1 {
@@ -764,6 +776,11 @@ input:focus {
   color: #fff;
 }
 
+.contact_form form button:hover{
+  background: rgb(144, 4, 144);
+  transition: all 0.3s ease;
+}
+
 @media screen and (max-width: 760px) {
   .navbar__container {
     display: flex;
@@ -890,7 +907,7 @@ input:focus {
     width: 52vw;
     height: 51vw;
     /* z-index: 1; */
-    background: url(images/download.jpeg) center no-repeat;
+    background: url(images/profile_photo.png) center no-repeat;
     background-size: cover;
     border-radius: 10px;
     opacity: 0.4;
@@ -908,7 +925,7 @@ input:focus {
     grid-column: 2;
     width: 47vw;
     height: 48vw;
-    background: url(images/download.jpeg) center no-repeat;
+    background: url(images/profile_photo.png) center no-repeat;
     background-size: cover;
     border-radius: 10px;
     margin-top: 25px;
@@ -1016,13 +1033,17 @@ input:focus {
   }
 
   .personal_project_1_image {
-    width: 39vw;
-    height: 39vh;
+    width: 83vw;
+    height: 28vh;
     grid-row: 2;
-    background: url(images/download.jpeg) center no-repeat;
+    background: url(images/personal_project_1.png) center no-repeat;
     background-size: cover;
     border-radius: 10px;
     opacity: 0.4;
+  }
+
+  .personal_project_1_image:hover{
+    opacity: 0.8;
   }
 
   .personal_project_1_details {
@@ -1080,14 +1101,18 @@ input:focus {
   }
 
   .personal_project_2_image {
-    width: 39vw;
-    height: 39vh;
+    width: 83vw;
+    height: 28vh;
     grid-row: 2;
     grid-column: 1;
-    background: url(images/download.jpeg) center no-repeat;
+    background: url(images/personal_project_2.png) center no-repeat;
     background-size: cover;
     border-radius: 10px;
     opacity: 0.4;
+  }
+
+  .personal_project_2_image:hover{
+    opacity: 0.8;
   }
 
   .personal_project_2_details {
@@ -1136,14 +1161,18 @@ input:focus {
   }
 
   .personal_project_3_image {
-    width: 39vw;
-    height: 39vh;
+    width: 83vw;
+    height: 28vh;
     grid-row: 2;
     grid-column: 1;
-    background: url(images/download.jpeg) center no-repeat;
+    background: url(images/personal_project_3.png) center no-repeat;
     background-size: cover;
     border-radius: 10px;
     opacity: 0.4;
+  }
+
+  .personal_project_3_image:hover{
+    opacity: 0.8;
   }
 
   .personal_project_3_details {
@@ -3090,6 +3119,11 @@ input:focus {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.left_side_logo_design:hover{
+  stroke: #b721ff;
+  fill:  #b721ff;
+}
+
 .left::after {
   content: "";
   display: block;
@@ -3109,4 +3143,8 @@ input:focus {
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
   color: #938e93;
+}
+
+.right a:hover{
+  color: #b721ff;
 }
