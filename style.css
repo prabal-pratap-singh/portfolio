@@ -215,45 +215,93 @@ body::-webkit-scrollbar {
   margin-top: 6%;
 }
 
+.collection_workdone_companies{
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  margin-left: 15%;
+}
+
 .workdone_companies {
   background: #141414;
   background-color: #141414;
   display: grid;
-  justify-content: flex-start;
-  margin-left: 16%;
-  margin-top: 2.8%;
-  margin-right: 72%;
+  grid-template-rows: repeat(3, 0.1fr);
+  /* grid-row: 1; */
+  justify-items: start;
+}
+
+.company_time_spent {
+  font-size: 1rem;
+  color: #938e93;
 }
 
 .workdone_companies_info {
   background: #141414;
   /* position: relative; */
-  margin-left: 30%;
-  margin-top: -3.5vh;
+  /* margin-left: 30%;
+  margin-top: -3.5vh; */
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 18px;
+  grid-column: 2;
+}
+.workdone_in_company_points li{
+  list-style: none;
+  font-size: 16px;
+}
+
+.workdone_in_company_points li::before {
+  content: "▹";
+  /* position: absolute; */
+  left: 0px;
+  color: var(--bright_blue);
+  font-size: var(--fz-sm);
+  line-height: 22px;
+  margin-right: 2%;
 }
 
 #worked_on_krishify_button {
   color: #b721ff;
-  font-size: 1.7vw;
+  grid-row: 2;
+  font-size: 1.5vw;
   background-color: #141414;
   border: none;
-  margin-left: 20%;
-  margin-right: 8%;
+  padding-right: 50%;
+  padding: 5%;
+  /* margin-left: 20%;
+  margin-right: 8%; */
+}
+
+#worked_on_snapmint_button {
+  color: #b721ff;
+  grid-row: 1;
+  font-size: 1.5vw;
+  background-color: #141414;
+  padding: 5%;
+  border: none;
+}
+
+#worked_on_snapmint_button:hover{
+  background-color: #442f4e;;
+}
+
+#worked_on_snapmint_button:focus {
+  background-color: #442f4e;;
 }
 
 #worked_on_krishify_button:hover {
+  background-color: #442f4e;;
+}
+
+#worked_on_krishify_button:focus {
+  background-color: #442f4e;;
+}
+
+/* #worked_on_snapmint_button:hover {
   border: none;
   border-color: #b721ff;
   transition: 0.3s;
   padding: 10%;
-}
-
-.company_time_spent {
-  font-size: 1.2rem;
-  color: #938e93;
-}
+} */
 
 .workdone_in_company {
   margin-top: 1%;
@@ -303,7 +351,7 @@ body::-webkit-scrollbar {
   opacity: 0.4;
 }
 
-.personal_project_1_image:hover{
+.personal_project_1_image:hover {
   opacity: 0.8;
 }
 
@@ -375,7 +423,7 @@ body::-webkit-scrollbar {
   opacity: 0.4;
 }
 
-.personal_project_2_image:hover{
+.personal_project_2_image:hover {
   opacity: 0.8;
 }
 
@@ -437,7 +485,7 @@ body::-webkit-scrollbar {
   opacity: 0.4;
 }
 
-.personal_project_3_image:hover{
+.personal_project_3_image:hover {
   opacity: 0.8;
 }
 
@@ -761,7 +809,7 @@ input:focus {
   color: #b721ff;
 }
 
-.contact_form form button{
+.contact_form form button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -776,9 +824,37 @@ input:focus {
   color: #fff;
 }
 
-.contact_form form button:hover{
+.contact_form form button:hover {
   background: rgb(144, 4, 144);
   transition: all 0.3s ease;
+}
+
+.main__btn {
+  font-size: 1rem;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  padding: 10px 10px;
+  border: none;
+  color: #fff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+  border-radius: 4px;
+  width: 22%;
+}
+
+.custom_loader {
+  position: absolute;
+  left: 35%;
+  /* right: 50%; */
+  top: 30%;
+  /* margin-top: 4%; */
+}
+
+#loader {
+  width: 420px;
+  height: 340px;
 }
 
 @media screen and (max-width: 760px) {
@@ -1042,7 +1118,7 @@ input:focus {
     opacity: 0.4;
   }
 
-  .personal_project_1_image:hover{
+  .personal_project_1_image:hover {
     opacity: 0.8;
   }
 
@@ -1111,7 +1187,7 @@ input:focus {
     opacity: 0.4;
   }
 
-  .personal_project_2_image:hover{
+  .personal_project_2_image:hover {
     opacity: 0.8;
   }
 
@@ -1171,7 +1247,7 @@ input:focus {
     opacity: 0.4;
   }
 
-  .personal_project_3_image:hover{
+  .personal_project_3_image:hover {
     opacity: 0.8;
   }
 
@@ -1264,7 +1340,7 @@ input:focus {
     height: 6%;
     left: 33%;
     top: 91%;
-    color: #938e93;;
+    color: #938e93;
   }
 
   #insta_logo {
@@ -1272,8 +1348,8 @@ input:focus {
     height: 6%;
     left: 33%;
     top: 91%;
-    stroke: #938e93;;
-    fill:#938e93;;
+    stroke: #938e93;
+    fill: #938e93;
   }
 
   #insta_logo:hover {
@@ -1289,8 +1365,8 @@ input:focus {
     height: 6%;
     left: 48%;
     top: 91%;
-    stroke: #938e93;;
-    fill:#938e93;;
+    stroke: #938e93;
+    fill: #938e93;
   }
 
   #github_logo:hover {
@@ -1306,8 +1382,8 @@ input:focus {
     height: 6%;
     left: 63%;
     top: 91%;
-    stroke: #938e93;;
-    fill:#938e93;;
+    stroke: #938e93;
+    fill: #938e93;
   }
 
   #linkdin_logo:hover {
@@ -1318,15 +1394,28 @@ input:focus {
     fill: rgb(144, 4, 144);
   }
 
-  #email_id_div{
+  #email_id_div {
     display: none;
   }
 
   .main__btn {
     padding: 12px 36px;
     margin: 2.5rem 0;
-    width: 35%;
-}
+    width: 70%;
+  }
+
+  .custom_loader {
+    position: absolute;
+    left: 25%;
+    /* right: 50%; */
+    top: 30%;
+    /* margin-top: 4%; */
+  }
+
+  #loader {
+    width: 420px;
+    height: 340px;
+  }
 }
 
 /*  hero section  */
@@ -1365,21 +1454,6 @@ input:focus {
   font-size: 2rem;
   font-weight: 700;
   color: #938e93;
-}
-
-.main__btn {
-  font-size: 1rem;
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-  padding: 10px 10px;
-  border: none;
-  color: #fff;
-  margin-top: 2rem;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.35s;
-  outline: none;
-  border-radius: 4px;
-  width: 22%;
 }
 
 .main__btn a {
@@ -1520,8 +1594,19 @@ input:focus {
     left: 5%;
   }
 
-  .contact{
+  .contact {
     margin-bottom: 25%;
+  }
+
+  .custom_loader {
+    position: absolute;
+    left: 0%;
+    top: 30%;
+  }
+
+  #loader {
+    width: 420px;
+    height: 340px;
   }
 }
 #elements li {
@@ -3123,9 +3208,9 @@ input:focus {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.left_side_logo_design:hover{
+.left_side_logo_design:hover {
   stroke: #b721ff;
-  fill:  #b721ff;
+  fill: #b721ff;
 }
 
 .left::after {
@@ -3149,6 +3234,6 @@ input:focus {
   color: #938e93;
 }
 
-.right a:hover{
+.right a:hover {
   color: #b721ff;
 }

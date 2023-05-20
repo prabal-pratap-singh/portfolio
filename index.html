@@ -16,6 +16,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- <div class="custom_loader">
+        <video autoplay muted loop id="loader">
+            <source src="files/custom-loader.mp4" type="video/mp4">
+      </video>
+    </div> -->
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
     <nav class="navbar">
@@ -28,7 +33,7 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="index.html#about_me" class="navbar__links">
+                    <a href="index.html#about_me_content" class="navbar__links">
                         ABOUT 
                     </a>
                 </li>
@@ -154,7 +159,7 @@
         <div class = animated_square_panel_7></div>
         <div class = animated_square_panel_8></div>
         <div class = animated_square_panel_9></div>
-        <a id="about_me" href="https://www.instagram.com/prabal.08/" target="_blank">
+        <a id="about_me_content" href="https://www.instagram.com/prabal.08/" target="_blank">
             <svg id="insta_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
         </a>
         <a href="https://github.com/prabal-pratap-singh/" target="_blank">
@@ -199,7 +204,7 @@
             <i id="horizontal_about_me_line"></i>
             <div class="about_me_para" id="about_me_para">
                 <div id="about_me_para1">
-                    <p><span id="about_me_1_para">My name is Prabal, and I have a great passion for technology and creating innovative solutions. In my experience as an <span style="color:#b721ff">intern at Krishify</span>, where I have primarily focused on <span style="color:#b721ff">backend development</span>. During this time, I have created numerous features for the Krishify app and integrated various services, leveraging my expertise in microservices to develop scalable solutions.</span><br><br>
+                    <p><span id="about_me_1_para">My name is Prabal, and I have a great passion for technology and creating innovative solutions. In my experience as an <span style="color:#b721ff">Developer in Startups</span>, where I have primarily focused on <span style="color:#b721ff">backend development</span>. During this time, I have created numerous features for the Krishify app and integrated various services, leveraging my expertise in microservices to develop scalable solutions.</span><br><br>
                     <span id="about_me_2_para">In addition to my backend development skills, I have a knowledge in <span style="color:#b721ff">machine learning</span>, <span style="color:#b721ff">web development</span>, and <span style="color:#b721ff">DevOps</span>. I am always eager to learn new skills and stay up-to-date with the latest industry trends. With my dedication and proficiency in various technologies.</span><br><br>
                     <span id="about_me_3_para">Here are a few technologies I’ve been working with recently: </span></p>
                     <ul class="skill_sets">
@@ -221,15 +226,32 @@
     <div class="worked_content" id="worked_content">
         <h1 id="worked_heading">Where I've Worked</h1>
         <!-- <li id="worked_on_krishify">KRISHIFY</li> -->
-        <div class="workdone_companies">
-            <button id="worked_on_krishify_button">Krishify</button>
-        </div>
-        <div class="workdone_companies_info">
-            <h3 class="workdone_companies_names">Software Developer Engineer (INTERN) <span><a href="https://krishify.com/" class="company_link" target="_blank">@ Krishify</a></span><br><span class="company_time_spent">July 2022 - Present</span><br></h3>
-            <div class="workdone_in_company">
-                <li id="1_point">Write modern, performant, maintainable code for Krishify app</li>
-                <li id="2_point">Work with a variety of different languages, platforms, frameworks such as JavaScript, TypeScript, Python, Django, DRF</li>
-                <li id="3_point">Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Android mobile apps</li>
+        <div class="collection_workdone_companies">
+            <div class="workdone_companies">
+                <button id="worked_on_krishify_button">Krishify</button>
+                <button id="worked_on_snapmint_button">Snapmint</button>
+            </div>
+            <div class="workdone_companies_info" id="snapmint">
+                <h3 class="workdone_companies_names">Backend Developer (INTERN) <span><a href="https://snapmint.com/" class="company_link" target="_blank">@ Snapmint</a></span><br><span class="company_time_spent">May 2023 - Present</span><br></h3>
+                <div class="workdone_in_company">
+                    <ul class="workdone_in_company_points">
+                        <li id="1_point">Write modern, performant, maintainable code for <span style="color:#b721ff">Snapmint </span></li>
+                        <li id="2_point">Work with a variety of different languages, platforms, frameworks such as <span style="color:#b721ff">JavaScript</span>, <span style="color:#b721ff">TypeScript</span>, <span style="color:#b721ff">Node.js</span>, <span style="color:#b721ff">Express.js</span>, <span style="color:#b721ff">MongoDB</span></li>
+                        <li id="3_point">Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across all platform</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="workdone_companies_info" id="krishify">
+                <h3 class="workdone_companies_names">Software Developer Engineer (INTERN) <span><a href="https://krishify.com/" class="company_link" target="_blank">@ Krishify</a></span><br><span class="company_time_spent">July 2022 - May 2023</span><br></h3>
+                <div class="workdone_in_company">
+                    <ul class="workdone_in_company_points">
+                        <li id="1_point">Worked on maintaining a  <span style="color:#b721ff">notification service</span> that resulted in increased daily active users (DAU)</li>
+                        <li id="2_point">Developed and maintained the backend infrastructure for an  <span style="color:#b721ff">ecommerce platform</span>, leading to a significant increase in overall revenue for the company</li>
+                        <li id="3_point">Developed a  <span style="color:#b721ff">User Management System (UMS) for Krishify</span>, resulting in improved lead generation and increased business opportunities</li>
+                        <li id="4_point">Collaborated with Business Team to gather requirements and  <span style="color:#b721ff">deliver solutions that aligned with business goals</span> and objectives</li>
+                        <li id="5_point"><span style="color:#b721ff">Tech-stack</span> :  Python, DRF, JavaScript, Postgres</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
