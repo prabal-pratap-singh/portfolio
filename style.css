@@ -1042,7 +1042,7 @@ input:focus {
     display: grid;
     grid-template-rows: 0.2fr 1fr;
     grid-template-columns: 1fr;
-    margin-left: 15%;
+    margin-left: 8%;
   }
 
   .workdone_companies {
