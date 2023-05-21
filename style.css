@@ -3141,6 +3141,7 @@ input:focus {
 .worked_content {
   background-color: #141414;
   margin-left: 1%;
+  margin-bottom: 5%;
 }
 
 /* .worked_content li{
