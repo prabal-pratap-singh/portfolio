@@ -20,6 +20,7 @@ body::-webkit-scrollbar {
   -webkit-font-smoothing: antialiased;
   background: #141414;
   cursor: none;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -212,7 +213,6 @@ body::-webkit-scrollbar {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 5%;
-  margin-top: 6%;
 }
 
 .collection_workdone_companies{
@@ -281,19 +281,20 @@ body::-webkit-scrollbar {
 }
 
 #worked_on_snapmint_button:hover{
-  background-color: #442f4e;;
+  background-color: #442f4e;
 }
 
 #worked_on_snapmint_button:focus {
-  background-color: #442f4e;;
+  background-color: #442f4e;
 }
 
+
 #worked_on_krishify_button:hover {
-  background-color: #442f4e;;
+  background-color: #442f4e;
 }
 
 #worked_on_krishify_button:focus {
-  background-color: #442f4e;;
+  background-color: #442f4e;
 }
 
 /* #worked_on_snapmint_button:hover {
@@ -572,7 +573,7 @@ body::-webkit-scrollbar {
 }
 
 .contact {
-  margin-bottom: 10%;
+  padding-bottom: 10%;
 }
 
 .contact p {
@@ -1008,6 +1009,10 @@ input:focus {
     margin-left: -9%;
   }
 
+  .contant{
+    padding-bottom: 20%;
+  }
+
   .contant h1 {
     display: flex;
     align-items: left;
@@ -1034,7 +1039,6 @@ input:focus {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    margin-top: 20%;
     margin-bottom: 12%;
   }
 
@@ -1624,7 +1628,7 @@ input:focus {
   }
 
   .contact {
-    margin-bottom: 25%;
+    padding-bottom: 25%;
   }
 
   .custom_loader {
@@ -3140,8 +3144,9 @@ input:focus {
 
 .worked_content {
   background-color: #141414;
-  margin-left: 1%;
-  margin-bottom: 5%;
+  padding-left: 1%;
+  padding-bottom: 5%;
+  padding-top: 6%;
 }
 
 /* .worked_content li{
@@ -3184,8 +3189,9 @@ input:focus {
 }
 
 .contant {
-  margin-left: 8%;
-  margin-top: 8%;
+  padding-left: 8%;
+  padding-top: 8%;
+  padding-bottom: 6%;
 }
 
 .personal_projects {

@@ -6,67 +6,27 @@ menu.addEventListener('click', function(){
   menulinks.classList.toggle('active');
 });
 
-var button = document.querySelector('.see_more_button');
-// button.addEventListener('click', ShowAndHide);
-
-// function ShowAndHide() {
-//   var x = document.getElementById('about_me_para2');
-//   var y = document.getElementById('curve_line');
-//   console.log(y)
-//   if (x.style.display == 'none') {
-//       x.style.display = 'block';
-//   } else {
-//       x.style.display = 'none';
-//   }
-// }
-
-
-// button.addEventListener('click', function handleClick() {
-//   const initialText = 'see more';
-//   var y = document.getElementById('curve_line');
-//   if (button.textContent.toLowerCase().includes(initialText.toLowerCase())) {
-//     button.textContent = 'see less';
-//     y.style.top = '134%';
-//   } else {
-//     button.textContent = initialText;
-//     y.style.top = '100%';
-//   }
-// });
-
-window.addEventListener("keydown", event => {  //  call a 3s setTimeout when the loop is called
-  var dog =  document.getElementById('running_dog');
-  var array = []
-  if (event.key.toUpperCase() == "R") {
-    console.log("dog started")
-    for(var i=8 ; i<100;i=i+0.1){
-      task(i,dog)
-      // dog.style.left = `${i}%`;
-    }
-  }
-});
-
-
-// window.addEventListener("keydown", event => {
+// window.addEventListener("keydown", event => {  //  call a 3s setTimeout when the loop is called
+//   var dog =  document.getElementById('running_dog');
+//   var array = []
 //   if (event.key.toUpperCase() == "R") {
-//   for (let i=8; i<=100; i++) {
-//   task(i);
-//   }
+//     console.log("dog started")
+//     for(var i=8 ; i<100;i=i+0.1){
+//       task(i,dog)
+//       // dog.style.left = `${i}%`;
+//     }
 //   }
 // });
 
-function task(i,dog) {
-  var dog =  document.getElementById('running_dog');
-   setTimeout(function() {
-       // Add tasks to do
-       console.log(i);
-       dog.style.display = 'block';
-       dog.style.left = `${i}%`;
-   }, 80 * i);
-  }
-
-// window.addEventListener('scroll',(event) => {
-//     console.log('Scrolling...', event);
-// });
+// function task(i,dog) {
+//   var dog =  document.getElementById('running_dog');
+//    setTimeout(function() {
+//        // Add tasks to do
+//        console.log(i);
+//        dog.style.display = 'block';
+//        dog.style.left = `${i}%`;
+//    }, 80 * i);
+//   }
 
 $(window).on("load",function() {
   $(window).scroll(function() {
@@ -85,22 +45,22 @@ $(window).on("load",function() {
   }).scroll(); //invoke scroll-handler on page-load
 });
 
-// $(window).on("load",function() {
-//   $(window).scroll(function() {
-//     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-//     $(".workdone_companies").each(function() {
-//       /* Check the location of each desired element */
-//       var objectBottom = $(this).offset().top + $(this).outerHeight();
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".workdone_companies_names").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
       
-//       /* If the element is completely within bounds of the window, fade it in */
-//       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-//         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-//       } else { //object goes out of view (scrolling up)
-//         if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-//       }
-//     });
-//   }).scroll(); //invoke scroll-handler on page-load
-// });
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
 
 $(window).on("load",function() {
   $(window).scroll(function() {
@@ -139,7 +99,7 @@ $(window).on("load",function() {
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $("#1_point").each(function() {
+    $(".1_point").each(function() {
       /* Check the location of each desired element */
       var objectBottom = $(this).offset().top + $(this).outerHeight();
       
@@ -156,7 +116,7 @@ $(window).on("load",function() {
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $("#2_point").each(function() {
+    $(".2_point").each(function() {
       /* Check the location of each desired element */
       var objectBottom = $(this).offset().top + $(this).outerHeight();
       
@@ -173,7 +133,7 @@ $(window).on("load",function() {
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $("#3_point").each(function() {
+    $(".3_point").each(function() {
       /* Check the location of each desired element */
       var objectBottom = $(this).offset().top + $(this).outerHeight();
       
@@ -190,7 +150,7 @@ $(window).on("load",function() {
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $("#4_point").each(function() {
+    $(".4_point").each(function() {
       /* Check the location of each desired element */
       var objectBottom = $(this).offset().top + $(this).outerHeight();
       
@@ -207,7 +167,7 @@ $(window).on("load",function() {
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $("#5_point").each(function() {
+    $(".5_point").each(function() {
       /* Check the location of each desired element */
       var objectBottom = $(this).offset().top + $(this).outerHeight();
       
