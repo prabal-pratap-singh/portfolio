@@ -215,7 +215,7 @@ body::-webkit-scrollbar {
   margin-bottom: 5%;
 }
 
-.collection_workdone_companies{
+.collection_workdone_companies {
   display: grid;
   grid-template-columns: 0.2fr 1fr;
   margin-left: 15%;
@@ -244,7 +244,7 @@ body::-webkit-scrollbar {
   font-size: 18px;
   grid-column: 2;
 }
-.workdone_in_company_points li{
+.workdone_in_company_points li {
   list-style: none;
   font-size: 16px;
 }
@@ -280,14 +280,13 @@ body::-webkit-scrollbar {
   border: none;
 }
 
-#worked_on_snapmint_button:hover{
+#worked_on_snapmint_button:hover {
   background-color: #442f4e;
 }
 
 #worked_on_snapmint_button:focus {
   background-color: #442f4e;
 }
-
 
 #worked_on_krishify_button:hover {
   background-color: #442f4e;
@@ -1009,7 +1008,7 @@ input:focus {
     margin-left: -9%;
   }
 
-  .contant{
+  .contant {
     padding-bottom: 20%;
   }
 
@@ -1060,12 +1059,12 @@ input:focus {
     column-gap: 5%;
     margin-bottom: 5%;
   }
-  
+
   .company_time_spent {
     font-size: 1rem;
     color: #938e93;
   }
-  
+
   .workdone_companies_info {
     background: #141414;
     /* position: relative; */
