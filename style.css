@@ -343,7 +343,7 @@ body::-webkit-scrollbar {
 
 .personal_project_1_image {
   width: 39vw;
-  height: 39vh;
+  height: 300px;
   grid-column: 1;
   /* background: url("images/personal_project_1.png") center no-repeat; */
   background-size: cover;
@@ -415,7 +415,7 @@ body::-webkit-scrollbar {
 
 .personal_project_2_image {
   width: 39vw;
-  height: 39vh;
+  height: 300px;
   grid-column: 2;
   /* background: url("images/personal_project_2.png") center no-repeat; */
   background-size: cover;
@@ -477,7 +477,7 @@ body::-webkit-scrollbar {
 
 .personal_project_3_image {
   width: 39vw;
-  height: 39vh;
+  height: 300px;
   grid-column: 1;
   /* background: url("images/personal_project_3.png") center no-repeat; */
   background-size: cover;
