@@ -630,7 +630,7 @@ input:focus {
 
 .animated_square_panel_1 {
   display: flex;
-  height: 42px;
+  height: 5.5%;
   position: absolute;
   border-left: 30px solid rgb(176, 156, 176);
   top: 21%;
@@ -638,7 +638,7 @@ input:focus {
 }
 .animated_square_panel_2 {
   display: flex;
-  height: 42px;
+  height: 5.5%;
   position: absolute;
   border-left: 30px solid rgb(178, 142, 178);
   top: 28%;
@@ -646,7 +646,7 @@ input:focus {
 }
 .animated_square_panel_3 {
   display: flex;
-  height: 42px;
+  height: 5.5%;
   position: absolute;
   border-left: 30px solid rgb(183, 112, 183);
   top: 35%;
@@ -654,7 +654,7 @@ input:focus {
 }
 .animated_square_panel_4 {
   display: flex;
-  height: 42px;
+  height: 5.5%;
   position: absolute;
   border-left: 30px solid rgb(176, 93, 176);
   top: 42%;
@@ -662,7 +662,7 @@ input:focus {
 }
 .animated_square_panel_5 {
   display: flex;
-  height: 42px;
+  height: 5.5%;
   position: absolute;
   border-left: 30px solid rgb(175, 81, 175);
   top: 49%;
@@ -670,7 +670,7 @@ input:focus {
 }
 .animated_square_panel_6 {
   display: flex;
-  height: 42px;
+  height: 5.5%;
   position: absolute;
   border-left: 30px solid rgb(181, 69, 181);
   top: 56%;
@@ -678,7 +678,7 @@ input:focus {
 }
 .animated_square_panel_7 {
   display: flex;
-  height: 42px;
+  height: 5.5%;
   position: absolute;
   border-left: 30px solid rgb(179, 38, 179);
   top: 63%;
@@ -686,7 +686,7 @@ input:focus {
 }
 .animated_square_panel_8 {
   display: flex;
-  height: 42px;
+  height: 5.5%;
   position: absolute;
   border-left: 30px solid rgb(183, 21, 183);
   top: 70%;
@@ -694,7 +694,7 @@ input:focus {
 }
 .animated_square_panel_9 {
   display: flex;
-  height: 42px;
+  height: 5%;
   position: absolute;
   border-left: 30px solid rgb(144, 4, 144);
   top: 77%;
@@ -1460,7 +1460,7 @@ input:focus {
 }
 
 .main__content h1 {
-  font-size: 4rem;
+  font-size: 7vh;
   background-color: #ff0844;
   background-image: linear-gradient(to left, #ff0844 0%, #ffb198 100%);
   background-size: 100%;
@@ -1471,7 +1471,7 @@ input:focus {
 }
 
 .main__content h2 {
-  font-size: 4rem;
+  font-size: 7vh;
   background-color: #ff0844;
   background-image: linear-gradient(to left, #b721ff 0%, #21d4fd 100%);
   background-size: 100%;
@@ -1483,7 +1483,7 @@ input:focus {
 
 .main__content p {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 4vh;
   font-weight: 700;
   color: #938e93;
 }

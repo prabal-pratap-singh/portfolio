@@ -627,6 +627,26 @@ $(window).on("load", function () {
     .scroll();
 });
 
+screen_height = window.innerHeight;
+console.log(screen_height)
+
+$(window).on("load", function () {
+  $(window)
+    .scroll(function () {
+      let screen_height = window.innerHeight;
+      if (screen_height < 532) {
+        // $("#right").hide();
+        // $("#left").hide();
+        $('#right_side_email_address').css({'font-size': '90%'});
+        // $('#left').css({'left': '300px'});
+      }
+      else{
+        $('#right_side_email_address').css({'font-size': '100%'});
+      }
+    })
+    .scroll();
+});
+
 // loader --------------------------------------
 
 // document.onreadystatechange = function() {
