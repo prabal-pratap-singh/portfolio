@@ -150,10 +150,10 @@ body::-webkit-scrollbar {
 #card_layer {
   grid-row: 1;
   grid-column: 1;
-  width: 14vw;
+  width: 16vw;
   height: 15vw;
   z-index: 1;
-  background: url("images/profile_photo.png") center no-repeat;
+  /* background: url("images/prabal_pratap_singh.png") center no-repeat; */
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
@@ -166,9 +166,9 @@ body::-webkit-scrollbar {
 #card {
   grid-row: 1;
   grid-column: 1;
-  width: 14vw;
+  width: 16vw;
   height: 15vw;
-  background: url("images/profile_photo.png") center no-repeat;
+  /* background: url("images/prabal_pratap_singh.png") center no-repeat; */
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
@@ -345,7 +345,7 @@ body::-webkit-scrollbar {
   width: 39vw;
   height: 39vh;
   grid-column: 1;
-  background: url("images/personal_project_1.png") center no-repeat;
+  /* background: url("images/personal_project_1.png") center no-repeat; */
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
@@ -417,7 +417,7 @@ body::-webkit-scrollbar {
   width: 39vw;
   height: 39vh;
   grid-column: 2;
-  background: url("images/personal_project_2.png") center no-repeat;
+  /* background: url("images/personal_project_2.png") center no-repeat; */
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
@@ -479,7 +479,7 @@ body::-webkit-scrollbar {
   width: 39vw;
   height: 39vh;
   grid-column: 1;
-  background: url("images/personal_project_3.png") center no-repeat;
+  /* background: url("images/personal_project_3.png") center no-repeat; */
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
@@ -983,7 +983,7 @@ input:focus {
     width: 52vw;
     height: 51vw;
     /* z-index: 1; */
-    background: url(images/profile_photo.png) center no-repeat;
+    /* background: url(images/prabal_pratap_singh.png) center no-repeat; */
     background-size: cover;
     border-radius: 10px;
     opacity: 0.4;
@@ -999,12 +999,12 @@ input:focus {
   #card {
     grid-row: 2;
     grid-column: 2;
-    width: 47vw;
+    width: 50vw;
     height: 48vw;
-    background: url(images/profile_photo.png) center no-repeat;
+    /* background: url(images/prabal_pratap_singh.png) center no-repeat; */
     background-size: cover;
     border-radius: 10px;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-left: -9%;
   }
 
@@ -1144,7 +1144,7 @@ input:focus {
     width: 83vw;
     height: 28vh;
     grid-row: 2;
-    background: url(images/personal_project_1.png) center no-repeat;
+    /* background: url(images/personal_project_1.png) center no-repeat; */
     background-size: cover;
     border-radius: 10px;
     opacity: 0.4;
@@ -1213,7 +1213,7 @@ input:focus {
     height: 28vh;
     grid-row: 2;
     grid-column: 1;
-    background: url(images/personal_project_2.png) center no-repeat;
+    /* background: url(images/personal_project_2.png) center no-repeat; */
     background-size: cover;
     border-radius: 10px;
     opacity: 0.4;
@@ -1273,7 +1273,7 @@ input:focus {
     height: 28vh;
     grid-row: 2;
     grid-column: 1;
-    background: url(images/personal_project_3.png) center no-repeat;
+    /* background: url(images/personal_project_3.png) center no-repeat; */
     background-size: cover;
     border-radius: 10px;
     opacity: 0.4;
