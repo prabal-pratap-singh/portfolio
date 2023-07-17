@@ -626,6 +626,7 @@ input:focus {
   left: 3%;
   right: auto;
   z-index: 10;
+  opacity: 0;
 }
 
 .animated_square_panel_1 {
@@ -3204,6 +3205,7 @@ input:focus {
   left: 94%;
   right: auto;
   z-index: 10;
+  opacity: 0;
 }
 
 .right::after {

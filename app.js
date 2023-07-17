@@ -449,15 +449,15 @@ $(window).on("load", function () {
     .scroll(function () {
       var windowBottom = $(this).scrollTop() + $(this).innerHeight();
       let screen_width = $(this).innerWidth();
-      if (windowBottom < 1250 && screen_width > 760) {
+      if (windowBottom > 1250 && screen_width > 760) {
         //object comes into view (scrolling down)
-        if ($("#left").css("opacity") == 1) {
-          $("#left").fadeTo(250, 0);
+        if ($("#left").css("opacity") == 0) {
+          $("#left").fadeTo(250, 1);
         }
       } else if (screen_width > 760) {
         //object goes out of view (scrolling up)
-        if ($("#left").css("opacity") == 0) {
-          $("#left").fadeTo(500, 1);
+        if ($("#left").css("opacity") == 1) {
+          $("#left").fadeTo(500, 0);
         }
       }
     })
