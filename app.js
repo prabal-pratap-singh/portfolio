@@ -628,17 +628,15 @@ $(window).on("load", function () {
 });
 
 screen_height = window.innerHeight;
-console.log(screen_height)
 
 $(window).on("load", function () {
   $(window)
     .scroll(function () {
       let screen_height = window.innerHeight;
       if (screen_height < 532) {
-        $('#right_side_email_address').css({'font-size': '90%'});
-      }
-      else{
-        $('#right_side_email_address').css({'font-size': '100%'});
+        $("#right_side_email_address").css({ "font-size": "90%" });
+      } else {
+        $("#right_side_email_address").css({ "font-size": "100%" });
       }
     })
     .scroll();
