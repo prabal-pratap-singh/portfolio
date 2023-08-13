@@ -3274,3 +3274,18 @@ input:focus {
 .right a:hover {
   color: #b721ff;
 }
+
+#loadingDiv {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #000; */
+  z-index: 999999999999;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}

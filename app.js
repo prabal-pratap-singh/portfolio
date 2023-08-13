@@ -6,6 +6,18 @@ menu.addEventListener("click", function () {
   menulinks.classList.toggle("active");
 });
 
+$("body").append(
+  '<div id="loadingDiv"><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/cf753176-2f3f-442d-bda1-54ad9e4f7b5c/x2582VksWh.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player></div>'
+);
+$(window).on("load", function () {
+  setTimeout(removeLoader, 3000); //wait for page load PLUS two seconds.
+});
+function removeLoader() {
+  $("#loadingDiv").fadeOut(500, function () {
+    $("#loadingDiv").remove();
+  });
+}
+
 // window.addEventListener("keydown", event => {  //  call a 3s setTimeout when the loop is called
 //   var dog =  document.getElementById('running_dog');
 //   var array = []
