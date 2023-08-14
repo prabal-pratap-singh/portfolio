@@ -6,9 +6,6 @@ menu.addEventListener("click", function () {
   menulinks.classList.toggle("active");
 });
 
-$("body").append(
-  '<div id="loadingDiv"><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/cf753176-2f3f-442d-bda1-54ad9e4f7b5c/x2582VksWh.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player></div>'
-);
 $(window).on("load", function () {
   setTimeout(removeLoader, 3000); //wait for page load PLUS two seconds.
 });
@@ -640,17 +637,16 @@ $(window).on("load", function () {
 });
 
 screen_height = window.innerHeight;
-console.log(screen_height)
+console.log(screen_height);
 
 $(window).on("load", function () {
   $(window)
     .scroll(function () {
       let screen_height = window.innerHeight;
       if (screen_height < 532) {
-        $('#right_side_email_address').css({'font-size': '90%'});
-      }
-      else{
-        $('#right_side_email_address').css({'font-size': '100%'});
+        $("#right_side_email_address").css({ "font-size": "90%" });
+      } else {
+        $("#right_side_email_address").css({ "font-size": "100%" });
       }
     })
     .scroll();
