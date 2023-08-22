@@ -147,35 +147,28 @@ body::-webkit-scrollbar {
   grid-template-columns: repeat(12, 1fr);
 }
 
-#card_layer {
-  grid-row: 1;
-  grid-column: 1;
-  width: 16vw;
-  height: 15vw;
-  z-index: 1;
-  /* background: url("images/prabal_pratap_singh.png") center no-repeat; */
-  background-size: cover;
-  border-radius: 10px;
+#card {
+  --s: 15px; /* size of the frame */
+  --b: 2px; /* border thickness */
+  --w: 240px; /* width of the image */
+  --c: #b721ff;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2 * var(--s));
+  --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
+  background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+    linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat;
+  outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+  transition: 0.4s;
+  cursor: pointer;
   opacity: 0.4;
 }
-
-#card_layer:hover {
-  opacity: 1;
-}
-
-#card {
-  grid-row: 1;
-  grid-column: 1;
-  width: 16vw;
-  height: 15vw;
-  /* background: url("images/prabal_pratap_singh.png") center no-repeat; */
-  background-size: cover;
-  border-radius: 10px;
-  opacity: 0.5;
-  transition: 1s opacity;
-}
-
-#card:is(:hover, :active) {
+#card:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s) / -2);
+  --_i: calc(100% - 2 * var(--s));
   opacity: 1;
 }
 
