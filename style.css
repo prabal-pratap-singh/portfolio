@@ -171,7 +171,12 @@ body::-webkit-scrollbar {
   /* background: url("images/prabal_pratap_singh.png") center no-repeat; */
   background-size: cover;
   border-radius: 10px;
-  opacity: 0.4;
+  opacity: 0.5;
+  transition: 1s opacity;
+}
+
+#card:is(:hover, :active) {
+  opacity: 1;
 }
 
 .contant h1 {
@@ -354,9 +359,10 @@ body::-webkit-scrollbar {
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
+  transition: 1s opacity;
 }
 
-.personal_project_1_image:hover {
+.personal_project_1_image:is(:hover, :active) {
   opacity: 0.8;
 }
 
@@ -426,9 +432,10 @@ body::-webkit-scrollbar {
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
+  transition: 1s opacity;
 }
 
-.personal_project_2_image:hover {
+.personal_project_2_image:is(:hover, :active) {
   opacity: 0.8;
 }
 
@@ -488,9 +495,10 @@ body::-webkit-scrollbar {
   background-size: cover;
   border-radius: 10px;
   opacity: 0.4;
+  transition: 1s opacity;
 }
 
-.personal_project_3_image:hover {
+.personal_project_3_image:is(:hover, :active) {
   opacity: 0.8;
 }
 
