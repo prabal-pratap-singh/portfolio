@@ -3169,7 +3169,7 @@ input:focus {
 
 .skill_sets {
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 270px));
+  grid-template-columns: repeat(4, minmax(140px, 270px));
   gap: 0px 10px;
   padding: 0px;
   margin: 20px 0px 0px;
@@ -3294,4 +3294,26 @@ input:focus {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+}
+
+.skills {
+  background-color: #141414;
+  padding-left: 1%;
+  padding-bottom: 5%;
+  padding-top: 6%;
+}
+
+#skill_heading {
+  /* padding-top: 8%; */
+  align-items: left;
+  padding-left: 10.5%;
+  position: relative;
+  font-size: 2.5rem;
+  background: linear-gradient(to left, #b721ff 75%, #21d4fd 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5%;
 }
